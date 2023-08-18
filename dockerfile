@@ -17,6 +17,7 @@ COPY . .
 EXPOSE 5001 
 
 # Set the environment variables
+ENV PORT=5001
 ENV DOTENV_PATH=/app/.env
 
 # Run the Flask app
