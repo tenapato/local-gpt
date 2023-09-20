@@ -9,7 +9,7 @@ docker build -t assistant-api .
 ```
 
 ```shell
-docker run -p 5001:5001 assistant-api
+docker run -p 5001:5001 -e OPEN_AI_KEY=<your-key> assistant-api
 ```
 
 ## How to use
