@@ -6,9 +6,10 @@ from dotenv import load_dotenv
 
 
 # Load the environment variables from the .env file
-load_dotenv(os.environ.get("DOTENV_PATH"))
+# load_dotenv(os.environ.get("DOTENV_PATH"))
 
-openai.api_key = os.getenv("OPEN_AI_KEY")
+# openai.api_key = os.getenv("OPEN_AI_KEY")
+openai.api_key = os.environ.get("OPEN_AI_KEY") 
 
 # Set this to `True` if you need GPT4. If not, the code will use GPT-3.5.
 #GPT4 = False

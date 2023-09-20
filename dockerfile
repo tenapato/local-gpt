@@ -16,6 +16,9 @@ COPY . .
 # Expose the port the Flask app will run on
 EXPOSE 5001 
 
+# Set the environment variable for the API key
+ENV OPEN_AI_KEY=""
+
 # Set the environment variables
 ENV PORT=5001
 ENV DOTENV_PATH=/app/.env
